@@ -24,11 +24,11 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        if (text != null) {
+//        if (text != null) {
             driver.findElement(locator).click();
             driver.findElement(locator).clear();
             driver.findElement(locator).sendKeys(text);
-        }
+//        }
     }
 
     public void click(By locator) {

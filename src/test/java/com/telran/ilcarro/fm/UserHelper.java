@@ -21,7 +21,7 @@ public class UserHelper extends HelperBase {
     }
 
     public void isLoginForm(String email, String password) {
-        type(By.xpath("#email"), email);
+        type(By.xpath("//input[@id='email']"), email);
         type(By.cssSelector("#password"), password);
     }
 
